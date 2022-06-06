@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styles.css">
@@ -20,5 +20,62 @@
                 </div>
             </div>
         </div>
+        <div class="form-container">
+            <div class="title">Registro</div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nombre</span>
+                    <input type="text" placeholder="Ingrese su nombre">
+                </div>
+                <div class="input-box">
+                    <span class="details">Apellido</span>
+                    <input type="text" placeholder="Ingrese su apellido">
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Ingrese su email">
+                </div>
+                <div class="input-box">
+                    <span class="details">Edad</span>
+                    <input type="text" placeholder="Ingrese su edad">
+                </div>
+                <div class="radio-box">
+                    <span class="gender-details">Genero</span>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Hombre</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Mujer</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Otro</label>
+                </div>
+                <div class="check-box">
+                    <span class="interests">Temas de interes</span>
+                    <input type="checkbox" name="sports" id="sports">
+                    <label for="sports">Deportes</label>
+                    <input type="checkbox" name="music" id="music">
+                    <label for="music">Musica</label>
+                    <input type="checkbox" name="games" id="games">
+                    <label for="games">Juegos</label>
+                    <input type="checkbox" name="technology" id="technology">
+                    <label for="technology">Tecnologia</label>
+                    <input type="checkbox" name="other" id="other">
+                    <label for="other">Otros</label>  
+                </div>
+
+                <div class="comment-box">
+                    <span class="comments">Comentarios</span>
+                    <input type="text" placeholder="Ingrese un comentario (opcional)">
+                </div>
+                <div class="cascade-menu">
+                    <span class="countries-list">Seleccione su pais</span>
+                    <select name="countries" id="countries">
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </body>   
-</html>  
+</html> 
