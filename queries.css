@@ -5,3 +5,49 @@
     }
 
   }
+
+@media only screen and (max-width: 784px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container form .title {
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .form-container form .user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.multiple-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.form .user-details .radio-box {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+
+}
+.radio-options {
+  display: flex;
+  flex-direction: row;
+}
+.comment-box .comment-detail input {
+  height: 150px;
+  min-width: 400px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  font-size: 16px;
+}
+
+}
