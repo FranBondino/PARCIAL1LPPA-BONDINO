@@ -1,0 +1,39 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.navbar {
+    background: rgb(23, 23, 24);
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+
+.nav-header span {
+    color: rgb(72, 202, 235);
+}
+  
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.nav-toggle {
+    border: transparent;
+    background: transparent;
+    color: white;
+    font-size: 1.7rem;
+}
+  
+ 
