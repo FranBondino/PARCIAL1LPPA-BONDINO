@@ -27,18 +27,22 @@
                     <div class="title">Registro</div>
                     <div class="user-details">
                         <div class="input-box">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombreInput">
-                            <p id="nameError" class="hiddenError">Debe poseer como minimo tres letras</p>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellidoInput">
-                            <p id="surNameError" class="hiddenError">Debe poseer como minimo tres letras</p>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" placeholder="Ingrese su email" id="mailInput"">
-                            <p id="emailError" class="hiddenError">Debe poseer formato de mail</p>
-                            <label for="edad">Edad</label>
-                            <input type="text" name="edad" placeholder="Ingrese su edad" id="edadInput">
-                            <p id="ageError" class="hiddenError">Debe ser un número entero mayor a 0 y menor a 100</p>
+                            <div class="nombre-ap">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombreInput">
+                                <p id="nameError" class="hiddenError">Debe poseer como minimo tres letras</p>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellidoInput">
+                                <p id="surNameError" class="hiddenError">Debe poseer como minimo tres letras</p>
+                            </div>
+                            <div class="mail-edad">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="Ingrese su email" id="mailInput"">
+                                <p id="emailError" class="hiddenError">Debe poseer formato de mail</p>
+                                <label for="edad">Edad</label>
+                                <input type="text" name="edad" placeholder="Ingrese su edad" id="edadInput">
+                                <p id="ageError" class="hiddenError">Debe ser un número entero mayor a 0 y menor a 100</p>
+                            </div>
                         </div>
                         <div class="multiple-choice">
                             <fieldset class="gender-fieldset">
@@ -85,21 +89,21 @@
                                 </ul>
                                 <p id="checkError" class="hiddenError">Debe seleccionar al menos una opcion</p>
                             </fieldset>
+                            <div class="cascade-menu">
+                                <span class="cascade-title">Seleccione su pais</span>
+                                <select name="countries" id="countries">
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="brasil">Brasil</option>
+                                    <option value="uruguay">Uruguay</option>
+                                </select>
+                                <p id="countryError" class="hiddenError">Debe seleccionar un pais</p>
+                            </div>
                         </div>
-                        <div class="cascade-menu">
-                            <span class="cascade-title">Seleccione su pais</span>
-                            <select name="countries" id="countries">
-                                <option value="argentina">Argentina</option>
-                                <option value="chile">Chile</option>
-                                <option value="brasil">Brasil</option>
-                                <option value="uruguay">Uruguay</option>
-                            </select>
-                            <p id="countryError" class="hiddenError">Debe seleccionar un pais</p>
-                        </div>
-                        <div class="comment-box">
-                            <label for="comment"> Comentarios </label>
-                            <textarea class="comment-input" type="text" id="comentarios" name="comentarios" placeholder="Escriba sus comentarios ... (Opcional)"></textarea>
-                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <label for="comments"> Comentarios </label>
+                        <textarea class="comment-input" type="text" id="comentarios" name="comentarios" placeholder="Escriba sus comentarios ... (Opcional)"></textarea>
                     </div>
                     <div class="button">
                         <input type="submit" name="submit" value="Enviar" id="submit">
