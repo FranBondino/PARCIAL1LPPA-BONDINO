@@ -4,50 +4,101 @@
       display: none;
     }
 
-  }
-
-@media only screen and (max-width: 784px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  .form-container form .title {
-    font-size: 25px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*FORM*/
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 90px;
+  padding: 20px;
+  
 }
-  .form-container form .user-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-container form .title {
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.form-container form .user-details{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+form .user-details .input-box {
+   margin: 20px 0 12px 0;
+   width: calc(100% / 2 - 20px);
+}
+
+.input-box span {
+   font-weight: 200;
+   margin-bottom: 5px;
+}
+.user-details .input-box input {
+   height: 45px;
+   width: 100%;
+   outline: none;
+   border-radius: 5px;
+   border: 2px solid whitesmoke;
+   font-size: 16px;
+}
+
+form .user-details .radio-box {
+   padding: 15px 0px;
+   display: flex;
+   flex-direction: column;
+}
+form .radio-box .gender-title  {
+   font-weight: 400;
+}
+
+.radio-options {
+   display: flex;
+   flex-direction: column;
+   padding:10px 0;
+}
+
+
+.check-options {
+   display: flex;
+   flex-direction: column;
+   padding: 10px 0;
+}
+form .button {
+   display: flex;
+   justify-content: center;
+}
+form .button input {
+   width: 50%;
+   background: #1f53c5;
+   color: aliceblue;
+   border: none;
+   padding: 20px;
+   margin-top: 25px;
+   font-size: 25px;
+   border-radius: 5px;
 }
 .multiple-choice {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-  justify-content: space-between;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   margin-top: 10px;
+   justify-content: space-between;
 }
-.form .user-details .radio-box {
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
 
-}
-.radio-options {
-  display: flex;
-  flex-direction: row;
-}
 .comment-box .comment-detail input {
-  height: 150px;
-  min-width: 400px;
-  outline: none;
-  border-radius: 5px;
-  border: 2px solid whitesmoke;
-  font-size: 16px;
+   height: 125px;
+   min-width: 650px;
+   outline: none;
+   border-radius: 5px;
+   border: 2px solid whitesmoke;
+   font-size: 16px;
 }
 
 }
+
+
+
