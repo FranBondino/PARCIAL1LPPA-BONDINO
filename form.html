@@ -42,45 +42,45 @@
                         </div>
                         <div class="multiple-choice">
                             <fieldset class="gender-fieldset">
-                                <legend>Seleccione su genero</legend>
+                                <legend>Genero</legend>
                                 <ul>
                                     <li>
-                                        <label for="male">Hombre</label>
                                         <input type="radio" id="male" value="hombre" name="gender">
+                                        <label for="male">Hombre</label>
                                     </li>
                                     <li>
-                                        <label for="female">Mujer</label>
                                         <input type="radio" id="female" value="mujer" name="gender">
+                                        <label for="female">Mujer</label>
                                     </li>
                                     <li>
-                                        <label for="other">Otro</label>
                                         <input type="radio" id="other" value="otro" name="gender">
+                                        <label for="other">Otro</label>
                                     </li>
                                 </ul>
                                 <p id="radioError" class="hiddenError">Debe seleccionar una opcion</p>
                             </fieldset>
                             <fieldset class="interest-fieldset">
-                                <legend>Seleccione al menos un tema de interes</legend>
+                                <legend>Intereses</legend>
                                 <ul>
                                     <li>
-                                        <label for="sports">Deportes</label>
                                         <input type="checkbox" value="deportes" name="sports" id="sports">
+                                        <label for="sports">Deportes</label>
                                     </li>
                                     <li>
-                                        <label for="music">Musica</label>
                                         <input type="checkbox" value="musica" name="music" id="music">
+                                        <label for="music">Musica</label>
                                     </li>
                                     <li>
-                                        <label for="games">Juegos</label>
                                         <input type="checkbox" value="juegos" name="games" id="games">
+                                        <label for="games">Juegos</label>
                                     </li>
                                     <li>
-                                        <label for="technology">Tecnologia</label>
                                         <input type="checkbox" value="tecnologia" name="technology" id="technology">
+                                        <label for="technology">Tecnologia</label>
                                     </li>
                                     <li>
-                                        <label for="other">Otros</label> 
                                         <input type="checkbox" value="otros" name="other" id="other">
+                                        <label for="other">Otros</label> 
                                     </li>
                                 </ul>
                                 <p id="checkError" class="hiddenError">Debe seleccionar al menos una opcion</p>
@@ -97,20 +97,18 @@
                             <p id="countryError" class="hiddenError">Debe seleccionar un pais</p>
                         </div>
                         <div class="comment-box">
-                            <span class="comment-title">Comentarios</span>
-                            <div class="comment-detail">
-                                <input type="text" placeholder="Ingrese un comentario (opcional)">
-                            </div>
+                            <label for="comment"> Comentarios </label>
+                            <textarea class="comment-input" type="text" id="comentarios" name="comentarios" placeholder="Escriba sus comentarios ... (Opcional)"></textarea>
                         </div>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Enviar">
+                        <input type="submit" name="submit" value="Enviar" id="submit">
                     </div>
                 </form>
             </div>
         </section>
         <footer>
-
+            <p>Parcial 1 LPPA</p>
         </footer>
     </body>   
 </html> 
