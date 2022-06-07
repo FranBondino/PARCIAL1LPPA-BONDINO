@@ -8,88 +8,109 @@
         <script src="validation.js"></script>
         <title> Formulario </title>
     </head>
-
     <body>
-        <div class="navbar">
-            <div class="container">
-                <div class="nav-header">
-                    <h2><span>Formulario</span></h2>
-                    <button class="nav-toggle" id="navToggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
+        <header>
+            <div class="navbar">
+                <div class="container">
+                    <div class="nav-header">
+                        <h2><span>Formulario</span></h2>
+                        <button class="nav-toggle" id="navToggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="form-container">
-            <form action="#">
-                <div class="title">Registro</div>
-                <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Nombre</span>
-                        <input type="text" placeholder="Ingrese su nombre">
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Apellido</span>
-                        <input type="text" placeholder="Ingrese su apellido">
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" placeholder="Ingrese su email">
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Edad</span>
-                        <input type="text" placeholder="Ingrese su edad">
-                    </div>
-                    <div class="multiple-choice">
-                        <div class="radio-box">
-                            <span class="gender-title">Genero</span>
-                            <div class="radio-options">
-                                <label for="male">Hombre</label>
-                                <input type="radio" name="gender" id="male">
-                                <label for="female">Mujer</label>
-                                <input type="radio" name="gender" id="female">
-                                <label for="other">Otro</label>
-                                <input type="radio" name="gender" id="other">
-                            </div>
+        </header>
+        <section>
+            <div class="form-container">
+                <form action="#">
+                    <div class="title">Registro</div>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombreInput">
+                            <p id="nameError" class="hiddenError">Debe poseer como minimo tres letras</p>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellidoInput">
+                            <p id="surNameError" class="hiddenError">Debe poseer como minimo tres letras</p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Ingrese su email" id="mailInput"">
+                            <p id="emailError" class="hiddenError">Debe poseer formato de mail</p>
+                            <label for="edad">Edad</label>
+                            <input type="text" name="edad" placeholder="Ingrese su edad" id="edadInput">
+                            <p id="ageError" class="hiddenError">Debe ser un número entero mayor a 0 y menor a 100</p>
                         </div>
-                        <div class="check-box">
-                            <span class="interests">Temas de interes</span>
-                            <div class="check-options">
-                                <label for="sports">Deportes</label>
-                                <input type="checkbox" name="sports" id="sports">
-                                <label for="music">Musica</label>
-                                <input type="checkbox" name="music" id="music">
-                                <label for="games">Juegos</label>
-                                <input type="checkbox" name="games" id="games">
-                                <label for="technology">Tecnologia</label>
-                                <input type="checkbox" name="technology" id="technology">
-                                <label for="other">Otros</label> 
-                                <input type="checkbox" name="other" id="other">
-                            </div>
+                        <div class="multiple-choice">
+                            <fieldset class="gender-fieldset">
+                                <legend>Seleccione su genero</legend>
+                                <ul>
+                                    <li>
+                                        <label for="male">Hombre</label>
+                                        <input type="radio" id="male" value="hombre" name="gender">
+                                    </li>
+                                    <li>
+                                        <label for="female">Mujer</label>
+                                        <input type="radio" id="female" value="mujer" name="gender">
+                                    </li>
+                                    <li>
+                                        <label for="other">Otro</label>
+                                        <input type="radio" id="other" value="otro" name="gender">
+                                    </li>
+                                </ul>
+                                <p id="radioError" class="hiddenError">Debe seleccionar una opcion</p>
+                            </fieldset>
+                            <fieldset class="interest-fieldset">
+                                <legend>Seleccione al menos un tema de interes</legend>
+                                <ul>
+                                    <li>
+                                        <label for="sports">Deportes</label>
+                                        <input type="checkbox" value="deportes" name="sports" id="sports">
+                                    </li>
+                                    <li>
+                                        <label for="music">Musica</label>
+                                        <input type="checkbox" value="musica" name="music" id="music">
+                                    </li>
+                                    <li>
+                                        <label for="games">Juegos</label>
+                                        <input type="checkbox" value="juegos" name="games" id="games">
+                                    </li>
+                                    <li>
+                                        <label for="technology">Tecnologia</label>
+                                        <input type="checkbox" value="tecnologia" name="technology" id="technology">
+                                    </li>
+                                    <li>
+                                        <label for="other">Otros</label> 
+                                        <input type="checkbox" value="otros" name="other" id="other">
+                                    </li>
+                                </ul>
+                                <p id="checkError" class="hiddenError">Debe seleccionar al menos una opcion</p>
+                            </fieldset>
                         </div>
                         <div class="cascade-menu">
                             <span class="cascade-title">Seleccione su pais</span>
-                            <div class="menu-options">
-                                <select name="countries" id="countries">
-                                    <option value="argentina">Argentina</option>
-                                    <option value="chile">Chile</option>
-                                    <option value="brasil">Brasil</option>
-                                    <option value="uruguay">Uruguay</option>
-                                </select>
+                            <select name="countries" id="countries">
+                                <option value="argentina">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="uruguay">Uruguay</option>
+                            </select>
+                            <p id="countryError" class="hiddenError">Debe seleccionar un pais</p>
+                        </div>
+                        <div class="comment-box">
+                            <span class="comment-title">Comentarios</span>
+                            <div class="comment-detail">
+                                <input type="text" placeholder="Ingrese un comentario (opcional)">
                             </div>
                         </div>
                     </div>
-                    <div class="comment-box">
-                        <span class="comment-title">Comentarios</span>
-                        <div class="comment-detail">
-                            <input type="text" placeholder="Ingrese un comentario (opcional)">
-                        </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
                     </div>
-                </div>
-                <div class="button">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
     </body>   
 </html> 
