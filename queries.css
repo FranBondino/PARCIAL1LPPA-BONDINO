@@ -4,20 +4,21 @@
       display: none;
     }
     
+    /*FORM*/
     .input-box{
       display: flex;
       justify-content: space-between;
     }
-    .nombre-ap {
+    .input-box .nombre-ap {
       width: 100%;
       margin: 0 5%;
     }
-    .mail-edad {
+    .input-box .mail-edad {
       width: 100%;
       margin: 0 5%;
     }
 
-    .multiple-choice {
+    .user-details .multiple-choice {
       display:flex;
       flex-direction: row;
       width: 100%;
